@@ -51,3 +51,4 @@ alias rm='rm -I --preserve-root'
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+export FIGNORE=DS_Store
