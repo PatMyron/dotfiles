@@ -118,3 +118,11 @@ fi
 
 export EDITOR=nano
 git config --global pull.rebase true
+
+
+# Amazon specific
+alias bb=brazil-build
+alias bbs='bb server'
+alias register_with_aaa=/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py
+alias modelbuild='cd ../*Model && bb && cd -'
+alias clockskew='sudo /sbin/service ntpd stop && sudo /usr/sbin/ntpd -gnq && sudo /sbin/service ntpd start'
