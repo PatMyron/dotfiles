@@ -117,4 +117,4 @@ if [[ $BASH_VERSION > "2.05a" ]]; then
 fi
 
 export EDITOR=nano
-# alias git pull='git pull --rebase'
+git config --global pull.rebase true
