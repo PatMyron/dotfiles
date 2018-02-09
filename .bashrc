@@ -1,14 +1,15 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+export GREP_OPTIONS='--color=auto'
+ls --color=always
+git config color.diff always
+
 alias pwdls='pwd && ls'
 
 export HISTCONTROL=ignoreboth:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
-
-export GREP_OPTIONS='--color=auto'
-ls --color=always
 
 PS1="\n$PS1"
 
@@ -51,14 +52,12 @@ alias rm='rm -I --preserve-root'
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-export FIGNORE=DS_Store
 
-git config color.diff always
+export FIGNORE=DS_Store # ignore files
 
 # do ". acd_func.sh"
 # acd_func 1.0.5, 10-nov-2004
 # petar marinov, http:/geocities.com/h2428, this is public domain
-
 cd_func ()
 {
   local x2 the_new_dir adir index
@@ -110,7 +109,6 @@ cd_func ()
 
   return 0
 }
-
 alias cd=cd_func
 
 if [[ $BASH_VERSION > "2.05a" ]]; then
