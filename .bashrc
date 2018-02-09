@@ -126,3 +126,5 @@ alias bbs='bb server'
 alias register_with_aaa=/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py
 alias modelbuild='cd ../*Model && bb && cd -'
 alias clockskew='sudo /sbin/service ntpd stop && sudo /usr/sbin/ntpd -gnq && sudo /sbin/service ntpd start'
+alias sshtunnel='ssh -fNL 2009:localhost:2009 $USER.aka.corp.amazon.com'
+alias sshdd='ssh $USER.aka.corp.amazon.com'
