@@ -118,7 +118,7 @@ fi
 
 export EDITOR=nano
 git config --global pull.rebase true
-
+alias q=exit
 
 # Amazon specific
 alias bb=brazil-build
