@@ -128,3 +128,4 @@ alias modelbuild='cd ../*Model && bb && cd -'
 alias clockskew='sudo /sbin/service ntpd stop && sudo /usr/sbin/ntpd -gnq && sudo /sbin/service ntpd start'
 alias sshtunnel='ssh -fNL 2009:localhost:2009 $USER.aka.corp.amazon.com'
 alias sshdd='ssh $USER.aka.corp.amazon.com'
+export LPT_ENABLE_PARTITIONING=true
