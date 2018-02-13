@@ -130,3 +130,4 @@ alias sshtunnel='ssh -fNL 2009:localhost:2009 $USER.aka.corp.amazon.com'
 alias sshdd='ssh $USER.aka.corp.amazon.com'
 alias maws=/apollo/env/AWSMinervaCLI/bin/aws-minerva
 export LPT_ENABLE_PARTITIONING=true
+export PATH=/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/AmazonAwsCli/bin:$BRAZIL_CLI_BIN:$HOME/.toolbox/bin:$PATH
