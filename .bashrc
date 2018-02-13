@@ -11,7 +11,7 @@ export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
 
-export PS1="\n\n\n\n\h  \w\[$(tput sgr0)\] $ "
+export PS1="\n\n\n\n\h  \w $ "
 
 stty -ixon # cycle through command search both ways
 
