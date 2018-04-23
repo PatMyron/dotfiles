@@ -137,3 +137,4 @@ export PATH=/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/
 odin-add () {
   /apollo/bin/env -e OdinTools odin adminAPI --addmaterialsettohostentity --materialSetName "$1" --hostspec "DEV-DSK-$USER"
 }
+export AWS_DEFAULT_REGION=us-west-2
