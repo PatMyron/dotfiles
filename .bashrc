@@ -1,7 +1,12 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export GREP_OPTIONS='--color=auto'
-ls --color=always
+if ls --help 2>&1 | grep -q -- --color
+then
+    alias ls='ls --color=auto -F'
+else
+    alias ls='ls -FG'
+fi
 git config --global color.diff always
 
 alias pwdls='pwd && ls'
