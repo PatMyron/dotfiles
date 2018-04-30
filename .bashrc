@@ -2,7 +2,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export GREP_OPTIONS='--color=auto'
 ls --color=always
-git config color.diff always
+git config --global color.diff always
 
 alias pwdls='pwd && ls'
 
