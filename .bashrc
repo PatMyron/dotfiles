@@ -13,7 +13,7 @@ shopt -s histappend                      # append to history, don't overwrite it
 
 export PS1="\n\n\n\n\h  \w $ "
 
-stty -ixon # cycle through command search both ways
+[[ $- == *i* ]] && stty -ixon # cycle through command search both ways https://stackoverflow.com/questions/24623021
 
 # Directory navigation aliases
 alias ..='cd ..'
