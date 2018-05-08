@@ -127,6 +127,7 @@ export EDITOR=nano
 git config --global pull.rebase true
 alias q=exit
 alias pyserver='python -m SimpleHTTPServer 8000'
+plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist > /dev/null
 
 # Amazon specific
 alias bb=brazil-build
