@@ -62,6 +62,8 @@ shopt -s checkwinsize
 
 export FIGNORE=DS_Store # ignore files
 
+defaults write com.apple.screencapture location ~/Downloads > /dev/null 
+
 # do ". acd_func.sh"
 # acd_func 1.0.5, 10-nov-2004
 # petar marinov, http:/geocities.com/h2428, this is public domain
