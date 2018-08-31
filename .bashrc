@@ -20,6 +20,7 @@ shopt -s histappend                      # append to history, don't overwrite it
 
 shopt -s cdspell
 shopt -s dirspell
+shopt -s nocaseglob
 
 export PS1="\n\n\n\n\h  \w $ "
 
