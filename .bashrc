@@ -31,6 +31,7 @@ shopt -s checkwinsize
 shopt -s cmdhist
 shopt -s autocd
 shopt -s checkhash
+shopt -s lithist
 
 export PS1="\n\n\n\n\h  \w $ "
 
