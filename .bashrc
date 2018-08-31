@@ -157,6 +157,7 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0 > /dev/null
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true > /dev/null
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true > /dev/null
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv" > /dev/null
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false > /dev/null
 
 # Amazon specific
 alias bb=brazil-build
