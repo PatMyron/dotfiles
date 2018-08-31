@@ -1,6 +1,8 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export GREP_OPTIONS='--color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 if ls --help 2>&1 | grep -q -- --color
 then
     alias ls='ls --color=auto -F'
