@@ -20,6 +20,7 @@ alias gd='git diff'
 alias g='git'
 alias du='du -h'
 alias df='df -h'
+alias sudo='sudo '
 
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
