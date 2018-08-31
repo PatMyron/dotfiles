@@ -21,15 +21,14 @@ alias g='git'
 alias du='du -h'
 alias df='df -h'
 
-export HISTCONTROL=ignoreboth:erasedups  # no duplicate entries
+export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
-shopt -s histappend                      # append to history, don't overwrite it
+shopt -s histappend
 
 shopt -s cdspell
 shopt -s dirspell
 shopt -s nocaseglob
-# check window size after commands and update the values of LINES and COLUMNS
 shopt -s checkwinsize
 shopt -s cmdhist
 shopt -s autocd
