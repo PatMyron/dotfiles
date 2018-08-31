@@ -14,6 +14,7 @@ git config --global color.diff always
 alias pwdls='pwd && ls'
 alias gs='git status'
 alias gd='git diff'
+alias g='git'
 
 export HISTCONTROL=ignoreboth:erasedups  # no duplicate entries
 export HISTSIZE=100000
