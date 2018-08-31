@@ -69,6 +69,7 @@ alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 
 alias mkdir='mkdir -pv' # Create parent directories
 # alias mv='mv -i'
+# alias cp='cp -i'
 # do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
 
