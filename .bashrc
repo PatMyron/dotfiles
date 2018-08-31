@@ -16,6 +16,7 @@ alias gs='git status'
 alias gd='git diff'
 alias g='git'
 alias du='du -h'
+alias df='df -h'
 
 export HISTCONTROL=ignoreboth:erasedups  # no duplicate entries
 export HISTSIZE=100000
