@@ -23,6 +23,9 @@ shopt -s dirspell
 shopt -s nocaseglob
 # check window size after commands and update the values of LINES and COLUMNS
 shopt -s checkwinsize
+shopt -s cmdhist
+shopt -s autocd
+shopt -s checkhash
 
 export PS1="\n\n\n\n\h  \w $ "
 
