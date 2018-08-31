@@ -14,13 +14,15 @@ git config --global color.diff always
 alias pwdls='pwd && ls'
 
 export HISTCONTROL=ignoreboth:erasedups  # no duplicate entries
-export HISTSIZE=100000                   # big big history
-export HISTFILESIZE=100000               # big big history
+export HISTSIZE=100000
+export HISTFILESIZE=100000
 shopt -s histappend                      # append to history, don't overwrite it
 
 shopt -s cdspell
 shopt -s dirspell
 shopt -s nocaseglob
+# check window size after commands and update the values of LINES and COLUMNS
+shopt -s checkwinsize
 
 export PS1="\n\n\n\n\h  \w $ "
 
@@ -58,12 +60,9 @@ extract () {
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 
 alias mkdir='mkdir -pv' # Create parent directories
-
+# alias mv='mv -i'
 # do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
-
-# check window size after commands and update the values of LINES and COLUMNS
-shopt -s checkwinsize
 
 export FIGNORE=DS_Store # ignore files
 
