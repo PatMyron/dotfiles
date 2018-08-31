@@ -36,7 +36,7 @@ shopt -s autocd
 shopt -s checkhash
 shopt -s lithist
 
-set completion-ignore-case on
+bind "set completion-ignore-case on"
 
 export PS1="\n\n\n\n\h  \w $ "
 
