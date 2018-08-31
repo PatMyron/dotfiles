@@ -1,3 +1,6 @@
+# https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
+# https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 alias grep='grep --color=auto'
