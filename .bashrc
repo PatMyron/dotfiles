@@ -81,8 +81,6 @@ alias rm='rm -I --preserve-root'
 
 export FIGNORE=DS_Store # ignore files
 
-defaults write com.apple.screencapture location ~/Downloads > /dev/null 
-
 # do ". acd_func.sh"
 # acd_func 1.0.5, 10-nov-2004
 # petar marinov, http:/geocities.com/h2428, this is public domain
@@ -149,18 +147,19 @@ git config --global pull.rebase true
 alias q=exit
 alias pyserver='python -m SimpleHTTPServer 8000'
 plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist > /dev/null
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false > /dev/null
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false > /dev/null
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true > /dev/null
-defaults write NSGlobalDomain com.apple.springing.delay -float 0 > /dev/null
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false > /dev/null
-defaults write com.apple.finder QuitMenuItem -bool true > /dev/null
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true > /dev/null
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" > /dev/null
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false > /dev/null
-defaults write com.apple.finder FXPreferredViewStyle -string "clmv" > /dev/null
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true > /dev/null
-defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true > /dev/null
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false 2> /dev/null
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false 2> /dev/null
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true 2> /dev/null
+defaults write NSGlobalDomain com.apple.springing.delay -float 0 2> /dev/null
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false 2> /dev/null
+defaults write com.apple.finder QuitMenuItem -bool true 2> /dev/null
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true 2> /dev/null
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" 2> /dev/null
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false 2> /dev/null
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv" 2> /dev/null
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true 2> /dev/null
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true 2> /dev/null
+defaults write com.apple.screencapture location ~/Downloads 2> /dev/null 
 
 # Amazon specific
 alias bb=brazil-build
