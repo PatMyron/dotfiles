@@ -17,6 +17,7 @@ git config --global color.diff always
 alias pwdls='pwd && ls'
 alias gs='git status'
 alias gd='git diff'
+alias gdo='git diff origin'
 alias gb='git branch'
 alias gf='git fetch'
 alias g='git'
