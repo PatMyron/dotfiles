@@ -169,6 +169,7 @@ defaults write com.apple.screencapture location ~/Downloads 2> /dev/null
 # Amazon specific
 alias bb=brazil-build
 alias bbs='bb server'
+alias bbr='brazil-recursive-cmd --allPackages brazil-build'
 alias register_with_aaa=/apollo/env/AAAWorkspaceSupport/bin/register_with_aaa.py
 alias modelbuild='cd ../*Model && bb && cd -'
 alias clockskew='sudo /sbin/service ntpd stop && sudo /usr/sbin/ntpd -gnq && sudo /sbin/service ntpd start'
