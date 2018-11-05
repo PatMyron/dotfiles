@@ -186,3 +186,5 @@ odin-rm () {
   /apollo/bin/env -e OdinTools odin adminAPI --removeMaterialSetFromHostEntity --materialSetName "$1" --hostspec "DEV-DSK-${USER^^}"
 }
 export AWS_DEFAULT_REGION=us-west-2
+
+# Microsoft specific
