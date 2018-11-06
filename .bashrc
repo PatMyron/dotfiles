@@ -179,7 +179,7 @@ for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
   curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> .gitignore
 done
 
-git config --global core.excludesfile .gitignore
+git config --global core.excludesfile ~/.gitignore
 
 brew update && brew upgrade && brew cleanup && brew doctor
 
