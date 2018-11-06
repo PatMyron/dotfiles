@@ -26,6 +26,7 @@ alias gb='git branch'
 alias gf='git fetch'
 alias gpr='git pull --rebase'
 alias ga='git commit -a --amend --no-edit'
+asias gr='git reset --hard origin/master'
 alias g='git'
 alias du='du -h'
 alias df='df -h'
@@ -177,6 +178,8 @@ done
 for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
   curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> .gitignore
 done
+
+brew update && brew upgrade && brew cleanup && brew doctor
 
 # Amazon specific
 alias bb=brazil-build
