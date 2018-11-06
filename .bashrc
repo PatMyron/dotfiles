@@ -168,6 +168,8 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true 2> 
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true 2> /dev/null
 defaults write com.apple.screencapture location ~/Downloads 2> /dev/null 
 
+curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore https://raw.githubusercontent.com/github/gitignore/master/Java.gitignore https://raw.githubusercontent.com/github/gitignore/master/Android.gitignore https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore https://raw.githubusercontent.com/github/gitignore/master/C++.gitignore > .gitignore
+
 # Amazon specific
 alias bb=brazil-build
 alias bbs='bb server'
