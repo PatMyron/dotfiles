@@ -168,6 +168,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false 2> /d
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv" 2> /dev/null
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true 2> /dev/null
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true 2> /dev/null
+defaults write com.apple.menuextra.battery ShowPercent -string "YES" 2> /dev/null
 defaults write com.apple.screencapture location ~/Downloads 2> /dev/null 
 
 for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio; do
