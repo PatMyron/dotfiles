@@ -168,7 +168,12 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true 2> 
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true 2> /dev/null
 defaults write com.apple.screencapture location ~/Downloads 2> /dev/null 
 
-curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore https://raw.githubusercontent.com/github/gitignore/master/Java.gitignore https://raw.githubusercontent.com/github/gitignore/master/Android.gitignore https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore https://raw.githubusercontent.com/github/gitignore/master/C++.gitignore > .gitignore
+for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio; do
+  curl https://raw.githubusercontent.com/github/gitignore/master/$file.gitignore >> .gitignore
+done
+for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
+  curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> .gitignore
+done
 
 # Amazon specific
 alias bb=brazil-build
