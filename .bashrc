@@ -16,6 +16,7 @@ else
     alias ls='ls -FG'
 fi
 git config --global color.diff always
+git config --global color.ui auto
 
 alias pwdls='pwd && ls'
 alias gs='git status'
