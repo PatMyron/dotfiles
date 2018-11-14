@@ -183,7 +183,7 @@ done
 
 git config --global core.excludesfile ~/.gitignore
 
-brew update && brew upgrade && brew cleanup && brew doctor
+(brew update && brew upgrade && brew cleanup && brew doctor) &
 
 # Amazon specific
 alias bb=brazil-build
