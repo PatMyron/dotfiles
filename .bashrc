@@ -175,10 +175,10 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES" 2> /dev/nul
 defaults write com.apple.screencapture location ~/Downloads 2> /dev/null 
 
 for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio; do
-  curl https://raw.githubusercontent.com/github/gitignore/master/$file.gitignore >> .gitignore
+  curl https://raw.githubusercontent.com/github/gitignore/master/$file.gitignore >> ~/.gitignore
 done
 for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
-  curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> .gitignore
+  curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> ~/.gitignore
 done
 
 git config --global core.excludesfile ~/.gitignore
