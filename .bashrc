@@ -179,11 +179,11 @@ defaults write com.apple.screencapture location ~/Downloads 2> /dev/null
 done
 for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
   curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> ~/.gitignore
-done)  > /dev/null 2>&1 &
+done) &>/dev/null & disown
 
 git config --global core.excludesfile ~/.gitignore
 
-(brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &
+(brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &>/dev/null & disown
 
 # Amazon specific
 alias bb=brazil-build
