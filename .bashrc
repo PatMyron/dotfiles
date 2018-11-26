@@ -18,6 +18,9 @@ fi
 git config --global color.diff always
 git config --global color.ui auto
 
+git config --global pull.rebase true
+git config --global core.excludesfile ~/.gitignore
+
 alias pwdls='pwd && ls'
 alias gs='git status'
 alias gd='git diff'
@@ -34,6 +37,9 @@ alias g='git'
 alias du='du -h'
 alias df='df -h'
 alias sudo='sudo '
+alias q=exit
+alias pyserver='python -m SimpleHTTPServer 8000'
+alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
@@ -52,10 +58,10 @@ shopt -s lithist
 bind "set completion-ignore-case on"
 
 export PS1="\n\n\n\n\h  \w $ "
+export EDITOR=nano
 
 [[ $- == *i* ]] && stty -ixon # cycle through command search both ways https://stackoverflow.com/questions/24623021
 
-# Directory navigation aliases
 alias .1='cd ..'
 alias .2='cd ../..'
 alias .3='cd ../../..'
@@ -84,15 +90,12 @@ extract () {
      fi
 }
 
-alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
-
-alias mkdir='mkdir -pv' # Create parent directories
+alias mkdir='mkdir -pv'
 # alias mv='mv -i'
 # alias cp='cp -i'
-# do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
 
-export FIGNORE=DS_Store # ignore files
+export FIGNORE=DS_Store
 
 # do ". acd_func.sh"
 # acd_func 1.0.5, 10-nov-2004
@@ -155,10 +158,6 @@ if [[ $BASH_VERSION > "2.05a" ]]; then
   [[ $- == *i* ]] && bind -x "\"\C-w\":cd_func -- ;"
 fi
 
-export EDITOR=nano
-git config --global pull.rebase true
-alias q=exit
-alias pyserver='python -m SimpleHTTPServer 8000'
 plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist > /dev/null
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false 2> /dev/null
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false 2> /dev/null
@@ -181,8 +180,6 @@ done
 for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
   curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> ~/.gitignore
 done) &>/dev/null & disown
-
-git config --global core.excludesfile ~/.gitignore
 
 (brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &>/dev/null & disown
 
