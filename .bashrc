@@ -5,10 +5,7 @@
 alias diff='colordiff'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias rgrep='rgrep --color=auto'
+alias grep='grep --color=auto -d skip'
 if ls --help 2>&1 | grep -q -- --color
 then
     alias ls='ls -hF --color=auto'
