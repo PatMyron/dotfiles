@@ -96,6 +96,7 @@ extract () {
 alias mkdir='mkdir -pv'
 # alias mv='mv -i'
 # alias cp='cp -i'
+alias ln='ln -i'
 alias rm='rm -I --preserve-root'
 
 # do ". acd_func.sh"
