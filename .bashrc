@@ -11,9 +11,9 @@ alias egrep='egrep --color=auto'
 alias rgrep='rgrep --color=auto'
 if ls --help 2>&1 | grep -q -- --color
 then
-    alias ls='ls --color=auto -F'
+    alias ls='ls -hF --color=auto'
 else
-    alias ls='ls -FG'
+    alias ls='ls -hFG'
 fi
 git config --global color.diff always
 git config --global color.ui auto
