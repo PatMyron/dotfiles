@@ -43,6 +43,15 @@ alias q=exit
 alias pyserver='python -m SimpleHTTPServer 8000'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 
+# alias chmod='chmod --preserve-root'
+# alias chgrp='chgrp --preserve-root'
+# alias chown='chown --preserve-root'
+# alias mv='mv -i'
+# alias cp='cp -i'
+alias mkdir='mkdir -pv'
+alias ln='ln -i'
+alias rm='rm -I --preserve-root'
+
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
@@ -92,12 +101,6 @@ extract () {
          echo "'$1' is not a valid file"
      fi
 }
-
-alias mkdir='mkdir -pv'
-# alias mv='mv -i'
-# alias cp='cp -i'
-alias ln='ln -i'
-alias rm='rm -I --preserve-root'
 
 # do ". acd_func.sh"
 # acd_func 1.0.5, 10-nov-2004
