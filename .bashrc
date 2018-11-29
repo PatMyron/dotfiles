@@ -45,6 +45,8 @@ alias mv='mv -i'
 alias mkdir='mkdir -pv'
 alias ln='ln -i'
 alias rm='rm -I --preserve-root'
+alias screen='screen -U'
+alias tmux='tmux -2'
 
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
