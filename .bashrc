@@ -7,7 +7,7 @@ export CLICOLOR=1
 alias grep='grep --color=auto -d skip'
 if ls --help 2>&1 | grep -q -- --color
 then
-    alias ls='ls -hF --color=auto'
+    alias ls='ls -hF --color=auto --group-directories-first'
 else
     alias ls='ls -hFG'
 fi
