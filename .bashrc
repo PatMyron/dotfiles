@@ -13,7 +13,6 @@ else
 fi
 git config --global color.diff always
 git config --global color.ui auto
-
 git config --global pull.rebase true
 git config --global core.excludesfile ~/.gitignore
 
@@ -38,7 +37,6 @@ alias sudo='sudo '
 alias q=exit
 alias pyserver='python -m SimpleHTTPServer'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
-
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 alias chown='chown --preserve-root'
