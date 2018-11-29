@@ -39,9 +39,9 @@ alias q=exit
 alias pyserver='python -m SimpleHTTPServer 8000'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 
-# alias chmod='chmod --preserve-root'
-# alias chgrp='chgrp --preserve-root'
-# alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+alias chown='chown --preserve-root'
 alias cp='cp -i -r'
 alias mv='mv -i'
 alias mkdir='mkdir -pv'
