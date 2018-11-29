@@ -36,7 +36,7 @@ alias df='df -h -T'
 alias free='free -h'
 alias sudo='sudo '
 alias q=exit
-alias pyserver='python -m SimpleHTTPServer 8000'
+alias pyserver='python -m SimpleHTTPServer'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 
 alias chmod='chmod --preserve-root'
