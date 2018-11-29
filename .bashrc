@@ -50,7 +50,6 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 shopt -s histappend
-
 shopt -s cdspell
 shopt -s dirspell
 shopt -s nocaseglob
