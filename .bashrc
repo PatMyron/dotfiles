@@ -47,6 +47,7 @@ alias ln='ln -i'
 alias rm='rm -I --preserve-root'
 alias screen='screen -U'
 alias tmux='tmux -2'
+alias tree='tree -Csuh'
 
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
