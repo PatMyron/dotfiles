@@ -32,7 +32,7 @@ alias gr='git reset --hard origin/master'
 alias gl='git log --all --decorate --pretty=oneline --graph --color --abbrev-commit --date=relative'
 alias g='git'
 alias du='du -h'
-alias df='df -h'
+alias df='df -h' # -T
 # alias free='free -h'
 alias sudo='sudo '
 alias q=exit
