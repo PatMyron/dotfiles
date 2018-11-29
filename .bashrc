@@ -33,7 +33,7 @@ alias gl='git log --all --decorate --pretty=oneline --graph --color --abbrev-com
 alias g='git'
 alias du='du -h'
 alias df='df -h' # -T
-# alias free='free -h'
+alias free='free -h'
 alias sudo='sudo '
 alias q=exit
 alias pyserver='python -m SimpleHTTPServer 8000'
