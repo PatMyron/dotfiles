@@ -159,7 +159,7 @@ if [[ $BASH_VERSION > "2.05a" ]]; then
   [[ $- == *i* ]] && bind -x "\"\C-w\":cd_func -- ;"
 fi
 
-plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist > /dev/null
+plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist &> /dev/null
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false 2> /dev/null
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false 2> /dev/null
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true 2> /dev/null
