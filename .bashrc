@@ -159,21 +159,21 @@ if [[ $BASH_VERSION > "2.05a" ]]; then
   [[ $- == *i* ]] && bind -x "\"\C-w\":cd_func -- ;"
 fi
 
-plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist &> /dev/null
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false 2> /dev/null
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false 2> /dev/null
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true 2> /dev/null
-defaults write NSGlobalDomain com.apple.springing.delay -float 0 2> /dev/null
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false 2> /dev/null
-defaults write com.apple.finder QuitMenuItem -bool true 2> /dev/null
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true 2> /dev/null
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" 2> /dev/null
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false 2> /dev/null
-defaults write com.apple.finder FXPreferredViewStyle -string "clmv" 2> /dev/null
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true 2> /dev/null
-defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true 2> /dev/null
-defaults write com.apple.menuextra.battery ShowPercent -string "YES" 2> /dev/null
-defaults write com.apple.screencapture location ~/Downloads 2> /dev/null 
+(plutil -insert Window\ Settings.Basic.useOptionAsMetaKey -bool YES ~/Library/Preferences/com.apple.terminal.plist
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain com.apple.springing.delay -float 0
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write com.apple.finder QuitMenuItem -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
 
 (for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio; do
   curl https://raw.githubusercontent.com/github/gitignore/master/$file.gitignore >> ~/.gitignore
