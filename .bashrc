@@ -50,6 +50,7 @@ alias tmux='tmux -2'
 alias tree='tree -Csuh'
 alias pipreqs='pipreqs --force'
 alias priority='ionice -c 2 -n 0 nice -n 20'
+alias rsync='rsync -a'
 
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
