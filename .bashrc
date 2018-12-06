@@ -13,8 +13,9 @@ else
 fi
 git config --global color.diff always
 git config --global color.ui auto
-git config --global pull.rebase true
 git config --global core.excludesfile ~/.gitignore
+git config --global core.pager cat
+git config --global pull.rebase true
 
 alias pwdls='pwd && ls'
 alias gs='git status'
