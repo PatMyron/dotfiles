@@ -81,6 +81,8 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 alias .6='cd ../../../../../..'
 
+subdir() { for d in *; do (cd "$d" && $@); done }
+
 extract () {
      if [ -f $1 ] ; then
          case $1 in
