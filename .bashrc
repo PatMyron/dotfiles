@@ -182,7 +182,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
 
-(for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio; do
+(for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio Jekyll; do
   curl https://raw.githubusercontent.com/github/gitignore/master/$file.gitignore >> ~/.gitignore
 done
 for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
