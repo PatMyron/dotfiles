@@ -67,6 +67,7 @@ shopt -s cmdhist
 shopt -s autocd
 shopt -s checkhash
 shopt -s lithist
+shopt -s extglob
 
 bind "set completion-ignore-case on"
 
