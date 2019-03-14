@@ -4,5 +4,5 @@ workflow "New workflow" {
 }
 
 action "shellcheck" {
-  uses = "ludeeus/action-shellcheck@0.0.1"
+  uses = "ludeeus/action-shellcheck@master"
 }
