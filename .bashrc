@@ -185,12 +185,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
 
-(for file in C C++ Python Java Android Gradle Node Terraform Swift VisualStudio Jekyll; do
-  curl https://raw.githubusercontent.com/github/gitignore/master/$file.gitignore >> ~/.gitignore
-done
-for file in Linux Windows macOS JetBrains Xcode VisualStudioCode; do
-  curl https://raw.githubusercontent.com/github/gitignore/master/Global/$file.gitignore >> ~/.gitignore
-done) &>/dev/null & disown
+(curl -sL https://www.gitignore.io/api/c,c++,node,java,xcode,macos,linux,swift,gradle,python,jekyll,android,windows,jetbrains,terraform,visualstudio,androidstudio,visualstudiocode > ~/.gitignore) & disown
 
 (brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &>/dev/null & disown
 
