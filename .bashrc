@@ -163,7 +163,6 @@ cd_func ()
   return 0
 }
 alias cd=cd_func
-
 if [[ $BASH_VERSION > "2.05a" ]]; then
   # ctrl+w shows the menu
   [[ $- == *i* ]] && bind -x "\"\C-w\":cd_func -- ;"
@@ -186,7 +185,6 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
 
 (curl -sL https://www.gitignore.io/api/c,c++,node,java,xcode,macos,linux,swift,gradle,python,jekyll,android,windows,jetbrains,terraform,visualstudio,androidstudio,visualstudiocode > ~/.gitignore) & disown
-
 (brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &>/dev/null & disown
 
 # Amazon specific
@@ -198,6 +196,7 @@ alias modelbuild='cd ../*Model && bb && cd -'
 alias clockskew='sudo /sbin/service ntpd stop && sudo /usr/sbin/ntpd -gnq && sudo /sbin/service ntpd start'
 alias sshtunnel='ssh -fNL 2009:localhost:2009 $USER.aka.corp.amazon.com'
 alias sshdd='ssh $USER.aka.corp.amazon.com'
+export AWS_DEFAULT_REGION=us-west-2
 export LPT_ENABLE_PARTITIONING=true
 export PATH=/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/AmazonAwsCli/bin:$BRAZIL_CLI_BIN:$HOME/.toolbox/bin:$PATH
 odin-add () {
@@ -206,6 +205,5 @@ odin-add () {
 odin-rm () {
   /apollo/bin/env -e OdinTools odin adminAPI --removeMaterialSetFromHostEntity --materialSetName "$1" --hostspec "DEV-DSK-${USER^^}"
 }
-export AWS_DEFAULT_REGION=us-west-2
 
 # Microsoft specific
