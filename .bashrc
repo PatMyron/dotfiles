@@ -58,6 +58,7 @@ alias rsync='rsync -a -z'
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
+export HISTTIMEFORMAT="%F %T "
 shopt -s histappend
 shopt -s cdspell
 shopt -s dirspell
