@@ -1,8 +1,8 @@
-workflow "New workflow" {
+workflow "Pocket Lint" {
   on = "push"
-  resolves = ["shellcheck"]
+  resolves = "pocket-lint"
 }
 
-action "shellcheck" {
-  uses = "ludeeus/action-shellcheck@master"
+action "pocket-lint" {
+  uses = "PatMyron/pocket-lint@master"
 }
