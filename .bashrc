@@ -205,6 +205,6 @@ odin-add () {
 }
 odin-rm () {
   /apollo/bin/env -e OdinTools odin adminAPI --removeMaterialSetFromHostEntity --materialSetName "$1" --hostspec "DEV-DSK-${USER^^}"
-}
+} # requires bash
 
 # Microsoft specific
