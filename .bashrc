@@ -1,4 +1,4 @@
-# curl -s 'https://macapps.link/en/firefox-chrome-github-sublime-androidstudio-docker-vscode-iterm-flux-spotify' | sh
+# brew cask install docker iterm2 google-chrome visual-studio-code firefox sublime-text spotify github flux jetbrains-toolbox
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 # explainshell.com
