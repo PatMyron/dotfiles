@@ -1,4 +1,5 @@
 # brew cask install docker iterm2 google-chrome visual-studio-code firefox sublime-text spotify github flux jetbrains-toolbox
+# source <(curl -s https://raw.githubusercontent.com/PatMyron/dotfiles/master/.bashrc)
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 # explainshell.com
