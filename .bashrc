@@ -10,8 +10,14 @@ alias grep='grep --color=auto -d skip'
 if ls --help 2>&1 | grep -q -- --color
 then
     alias ls='ls -hF --color=auto --group-directories-first'
+    alias df='df -h -T'
+    alias chmod='chmod --preserve-root'
+    alias chgrp='chgrp --preserve-root'
+    alias chown='chown --preserve-root'
+    alias rm='rm -I --preserve-root'
 else
     alias ls='ls -hFG'
+    alias df='df -h'
 fi
 git config --global color.diff always
 git config --global color.ui auto
@@ -38,17 +44,12 @@ alias q='exit'
 alias pyserver='python -m SimpleHTTPServer'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 alias du='du -h'
-alias df='df -h -T'
 alias free='free -h'
 alias sudo='sudo '
-alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
-alias chown='chown --preserve-root'
 alias cp='cp -i -r'
 alias mv='mv -i'
 alias mkdir='mkdir -pv'
 alias ln='ln -i'
-alias rm='rm -I --preserve-root'
 alias screen='screen -U'
 alias tmux='tmux -2'
 alias tree='tree -Csuh'
