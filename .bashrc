@@ -1,8 +1,15 @@
 # brew cask install docker iterm2 google-chrome visual-studio-code firefox sublime-text spotify github flux jetbrains-toolbox
 # source <(curl -s https://raw.githubusercontent.com/PatMyron/dotfiles/master/.bashrc)
+#
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 # explainshell.com
+#
+# Option + arrow keys: moves cursor word-by-word
+# Command + double click: opens links
+# Option + click: moves cursor
+# Control + r: search command history
+# Control + s: search command history the other direction
 
 alias diff='colordiff'
 export CLICOLOR=1
