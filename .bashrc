@@ -5,6 +5,7 @@
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 # explainshell.com
 #
+# Command + shift + a: select output of last command
 # Option + arrow keys: moves cursor word-by-word
 # Command + double click: opens links
 # Option + click: moves cursor
