@@ -50,6 +50,7 @@ alias gup='git fetch upstream && git reset --hard upstream/master && git push or
 alias g='git'
 alias q='exit'
 alias pyserver='python -m SimpleHTTPServer'
+alias rbserver='ruby -run -ehttpd . -p8000'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
 alias du='du -h'
 alias free='free -h'
