@@ -46,6 +46,7 @@ alias gpr='git pull --rebase'
 alias ga='git commit -a --amend --reuse-message=HEAD'
 alias gr='git reset --hard origin'
 alias gl='git log --all --decorate --pretty=oneline --graph --color --abbrev-commit --date=relative'
+# git log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)"%an" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
 alias gup='git fetch upstream && git reset --hard upstream/master && git push origin master --force'
 alias g='git'
 alias q='exit'
