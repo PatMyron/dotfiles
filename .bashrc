@@ -82,6 +82,7 @@ shopt -s autocd
 shopt -s checkhash
 shopt -s lithist
 shopt -s extglob
+shopt -s globstar
 
 bind "set completion-ignore-case on"
 
