@@ -31,6 +31,7 @@ fi
 git config --global color.diff always
 git config --global color.ui auto
 git config --global core.excludesfile ~/.gitignore
+git config --global core.attributesfile ~/.gitattributes
 git config --global core.pager cat
 git config --global pull.rebase true
 
