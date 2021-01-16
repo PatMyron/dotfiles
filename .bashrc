@@ -214,7 +214,7 @@ alias sshtunnel='ssh -fNL 2009:localhost:2009 $USER.aka.corp.amazon.com'
 alias sshdd='ssh $USER.aka.corp.amazon.com'
 export AWS_DEFAULT_REGION=us-west-2
 export LPT_ENABLE_PARTITIONING=true
-export PATH=$PATH:/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/AmazonAwsCli/bin:$BRAZIL_CLI_BIN:$HOME/.toolbox/bin:~/Library/Python/3.7/bin
+export PATH=$PATH:/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/AmazonAwsCli/bin:$BRAZIL_CLI_BIN:$HOME/.toolbox/bin:~/Library/Python/*/bin
 odin-add () {
   /apollo/bin/env -e OdinTools odin adminAPI --addmaterialsettohostentity --materialSetName "$1" --hostspec "DEV-DSK-$USER"
 }
