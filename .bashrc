@@ -205,6 +205,8 @@ defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
 (curl -sL https://gist.githubusercontent.com/tekin/12500956bd56784728e490d8cef9cb81/raw/73f0a92cd447b2151cdf3c05d1a40e4701894028/.gitattributes > ~/.gitattributes) & disown
 (brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &>/dev/null & disown
 
+export PATH=$PATH:~/Library/Python/*/bin:/opt/homebrew/bin:~/.local/bin
+
 # Amazon specific
 alias bb=brazil-build
 alias bbs='bb server'
@@ -216,7 +218,7 @@ alias sshtunnel='ssh -fNL 2009:localhost:2009 $USER.aka.corp.amazon.com'
 alias sshdd='ssh $USER.aka.corp.amazon.com'
 export AWS_DEFAULT_REGION=us-west-2
 export LPT_ENABLE_PARTITIONING=true
-export PATH=$PATH:/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/AmazonAwsCli/bin:$BRAZIL_CLI_BIN:$HOME/.toolbox/bin:~/Library/Python/*/bin:/opt/homebrew/bin
+export PATH=$PATH:/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:/apollo/env/AmazonAwsCli/bin:$BRAZIL_CLI_BIN:$HOME/.toolbox/bin
 odin-add () {
   /apollo/bin/env -e OdinTools odin adminAPI --addmaterialsettohostentity --materialSetName "$1" --hostspec "DEV-DSK-$USER"
 }
