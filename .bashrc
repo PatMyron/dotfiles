@@ -205,7 +205,7 @@ defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
 (curl -sL https://gist.githubusercontent.com/tekin/12500956bd56784728e490d8cef9cb81/raw/73f0a92cd447b2151cdf3c05d1a40e4701894028/.gitattributes > ~/.gitattributes) & disown
 (brew update && brew upgrade && brew cleanup && brew doctor && brew prune) &>/dev/null & disown
 
-export PATH=$PATH:~/Library/Python/*/bin:/opt/homebrew/bin:~/.local/bin
+export PATH=$PATH:~/Library/Python/*/bin:/opt/homebrew/bin:~/.local/bin:$HOME/go/bin
 
 # Amazon specific
 alias bb=brazil-build
