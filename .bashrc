@@ -34,6 +34,7 @@ git config --global core.excludesfile ~/.gitignore
 git config --global core.attributesfile ~/.gitattributes
 git config --global core.pager cat
 git config --global pull.rebase true
+git config --global push.default current
 
 alias pwdls='pwd && ls'
 alias gs='git status'
