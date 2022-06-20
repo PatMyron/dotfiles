@@ -200,7 +200,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-defaults write com.apple.screencapture location ~/Downloads) &>/dev/null
+defaults write com.apple.screencapture location ~/Downloads/screen) &>/dev/null
 
 (curl -sL https://www.gitignore.io/api/c,c++,node,go,java,xcode,macos,linux,swift,gradle,python,jekyll,android,windows,jetbrains,terraform,visualstudio,androidstudio,visualstudiocode > ~/.gitignore) & disown
 (curl -sL https://gist.githubusercontent.com/tekin/12500956bd56784728e490d8cef9cb81/raw/73f0a92cd447b2151cdf3c05d1a40e4701894028/.gitattributes > ~/.gitattributes) & disown
