@@ -20,6 +20,7 @@ if ls --help 2>&1 | grep -q -- --color
 then
     alias ls='ls -hF --color=auto --group-directories-first'
     alias df='df -h -T'
+    alias chcon='chcon --preserve-root'
     alias chmod='chmod --preserve-root'
     alias chgrp='chgrp --preserve-root'
     alias chown='chown --preserve-root'
