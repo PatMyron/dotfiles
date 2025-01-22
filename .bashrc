@@ -1,8 +1,11 @@
 # brew install --cask docker iterm2 google-chrome visual-studio-code firefox sublime-text spotify github flux jetbrains-toolbox
 # source <(curl -s https://raw.githubusercontent.com/PatMyron/dotfiles/master/.bashrc)
 #
-# https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
-# https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
+# https://www.gnu.org/software/bash/manual/html_node/Indexes.html
+# https://www.gnu.org/software/bash/manual/html_node/Modifying-Shell-Behavior.html
+# https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
+# https://fishshell.com/docs/current/language.html#special-variables
+# https://zsh.sourceforge.io/Doc/Release/Options.html
 # explainshell.com
 #
 # Control + command + space: emoji search
