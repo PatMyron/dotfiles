@@ -8,7 +8,7 @@
 # https://zsh.sourceforge.io/Doc/Release/Options.html
 # explainshell.com
 #
-# Control + command + space: emoji search
+# Control + command + space: emoji search (or https://macos-defaults.com/keyboard/applefnusagetype.html)
 # Command + shift + a: select output of last command
 # Option + arrow keys: moves cursor word-by-word
 # Command + double click: opens links
@@ -196,11 +196,19 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain com.apple.springing.delay -float 0
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 3
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder QuitMenuItem -bool true
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true
+defaults write com.apple.HIToolbox AppleFnUsageType -int 2
+defaults write com.apple.dock expose-group-apps -bool true
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
