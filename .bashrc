@@ -57,6 +57,7 @@ alias gl='git log --all --decorate --pretty=oneline --graph --color --abbrev-com
 alias gup='git fetch upstream && git reset --hard upstream/master && git push origin master --force'
 alias g='git'
 alias q='exit'
+alias pyserver3='python3 -m http.server'
 alias pyserver='python -m SimpleHTTPServer'
 alias rbserver='ruby -run -ehttpd . -p8000'
 alias clean='rm -f *.pyc *.class *.o *~ *.bak *.dvi *.aux *.log'
