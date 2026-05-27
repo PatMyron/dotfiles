@@ -97,6 +97,7 @@ bind "set completion-ignore-case on"
 export PS1="\n\n\n\n\h  \w $ "
 export EDITOR=nano
 export FIGNORE=DS_Store
+export DO_NOT_TRACK=1
 
 [[ $- == *i* ]] && stty -ixon # cycle through command search both ways https://stackoverflow.com/questions/24623021
 
