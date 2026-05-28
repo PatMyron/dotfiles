@@ -92,7 +92,18 @@ shopt -s extglob
 shopt -s globstar
 shopt -s nullglob
 
-bind "set completion-ignore-case on"
+if [[ $- == *i* ]]
+then
+    bind "set completion-ignore-case on"
+    bind "set show-all-if-ambiguous on"
+    bind "set show-all-if-unmodified on"
+    bind "set mark-symlinked-directories on"
+
+    for completion_file in /opt/homebrew/etc/profile.d/bash_completion.sh /usr/local/etc/profile.d/bash_completion.sh /etc/bash_completion
+    do
+        [[ -r "$completion_file" ]] && source "$completion_file" && break
+    done
+fi
 
 export PS1="\n\n\n\n\h  \w $ "
 export EDITOR=nano
